@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="Main.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1>Library</h1>
+    </nav>
+    <main>
+      <div class="inputs">
+        <form action="/">
+          <div class="forTitle">
+            <label for="text">Title:</label>
+            &nbsp
+            <input type="text" id="title" placeholder="Brida" required />
+          </div>
+          <div class="forAuthor">
+            <label for="text">Author:</label>
+            &nbsp
+            <input
+              type="text"
+              id="author"
+              placeholder="Paulo Cohelo"
+              required
+            />
+          </div>
+          <div class="forPages">
+            <label for="text">Pages:</label>
+            &nbsp;
+            <input type="text" id="pages" placeholder="256" required />
+          </div>
+          <div class="forPrice">
+            <label for="text">Price:</label>
+            &nbsp
+            <input type="text" id="price" placeholder="15.99$" required />
+          </div>
+        </form>
+        <button type="submit" id="submit" onclick="addBookToLibrary()">
+          submit
+        </button>
+      </div>
+      <div class="controle">
+        <h2>Add a Book</h2>
+        <button class="add" onclick="displayBlock()">Add</button>
+      </div>
+      <div class="bookCards"></div>
+    </main>
+    <footer>
+      <h6>ZixUUUs, The odin Project 2024</h6>
+    </footer>
+  </body>
+</html>
